@@ -8,15 +8,10 @@ function removeDuplicate(array) {
     return array;
 }
 
-function filterArray(a, value) {
-    array = removeDuplicate(a);
-    let arr = array.filter(item => {
-        if(item > value)
-            return item;
-    })
-    // return new Set(arr);     can use if want
-    return (arr);
+function filterArray(array, value){
+    array = removeDuplicate(array);
+    return array.filter(item => item > value);
 }
 
-let A = [8, 3, 7, 3, 2, 8, 9, 3, 2];
-console.log(filterArray(A, 5));
+let A = [8, 3, 7, 3, 8, 9, 3, 2];
+console.log(filterArray(A,6));
