@@ -1,7 +1,15 @@
-/* *{
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Titillium Web", consolas;
+}
+
+html{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -10,14 +18,107 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: white;
+    background-color: black;
 }
 
 .container{
     width: 80%;
     border: 1px double blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: rgb(217, 198, 233);
+}
+.upper-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+}
+.inputs input {
+    width: 100%;
     padding: 10px;
-} */
-
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
 li{
     list-style: none;
+}
+.Buttons {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.Buttons button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.Buttons button:hover{
+    box-shadow: 0 0 15px black;
+}
+.Buttons button:nth-child(2){
+    background-color: blueviolet;
+}
+.Buttons button:nth-child(2):hover{
+    box-shadow: 0 0 10px blueviolet;
+}
+.lower-div{
+    padding: 10px;
+    background-color: rgb(241, 240, 240);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.lower-div .item {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+
+    button{
+        padding: 10px 20px;
+    }
+}
+.button-box button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.button-box button:nth-child(1){
+    background-color: rgba(238, 84, 84, 0.911);
+    color: white;
+}
+.button-box button:nth-child(1):hover{
+        box-shadow: 0 0 10px rgba(238, 84, 84, 0.911);
+}
+
+.button-box button:nth-child(2){
+    background-color: blueviolet;
+    color: white;
+}
+.button-box button:nth-child(2):hover{
+    box-shadow: 0 0 10px blueviolet;
 }
